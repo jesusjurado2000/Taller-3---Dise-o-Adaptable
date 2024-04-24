@@ -20,3 +20,24 @@ products.forEach(product => {
   `;
   gallery.appendChild(productDiv);
 });
+
+// Cart functionality
+let cartItems = [];
+
+function renderCart() {
+  cart.innerHTML = '';
+  if (cartItems.length === 0) {
+    cart.textContent = 'Tu carro esta vacio';
+  } else {
+    cartItems.forEach(item => {
+      const cartItemDiv = document.createElement('div');
+      cartItemDiv.innerHTML = `
+        <h3>${item.name}</h3>
+        <p>$${item.price}</p>
+        <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${item.id}, this.value)">
+        <button onclick="removeFromCart(${item.id})">Eliminar</button>
+      `;
+      cart.appendChild(cartItemDiv);
+    });
+  }
+}
