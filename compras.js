@@ -57,3 +57,13 @@ function removeFromCart(productId) {
   cartItems = cartItems.filter(item => item.id !== productId);
   renderCart();
 }
+
+function updateQuantity(productId, newQuantity) {
+  const item = cartItems.find(item => item.id === productId);
+  item.quantity = parseInt(newQuantity);
+  renderCart();
+}
+function removeFromCart(productId) {
+  cartItems = cartItems.filter(item => item.id !== productId);
+  renderCart();
+}
