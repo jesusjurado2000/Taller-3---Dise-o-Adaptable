@@ -1,1 +1,1 @@
-# Taller-3---Dise-o-Adaptable
+# Taller-3---Diseno-Adaptable
