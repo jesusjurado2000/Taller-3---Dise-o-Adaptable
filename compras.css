@@ -10,3 +10,8 @@
   margin: 0 auto;
   padding: 20px;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
