@@ -41,3 +41,14 @@ function renderCart() {
     });
   }
 }
+
+function addToCart(productId) {
+  const product = products.find(product => product.id === productId);
+  const existingItem = cartItems.find(item => item.id === productId);
+  if (existingItem) {
+    existingItem.quantity++;
+  } else {
+    cartItems.push({ id: product.id, name: product.name, price: product.price, quantity: 1 });
+  }
+  renderCart();
+}
