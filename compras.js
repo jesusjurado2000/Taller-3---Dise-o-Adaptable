@@ -7,3 +7,16 @@ const products = [
 const gallery = document.getElementById('gallery');
 const cart = document.getElementById('cart');
 const checkoutBtn = document.getElementById('checkoutBtn');
+
+// Render products gallery
+products.forEach(product => {
+  const productDiv = document.createElement('div');
+  productDiv.classList.add('product');
+  productDiv.innerHTML = `
+    <img src="${product.image}" alt="${product.name}">
+    <h3>${product.name}</h3>
+    <p>$${product.price}</p>
+    <button onclick="addToCart(${product.id})">Añadir al carrito</button>
+  `;
+  gallery.appendChild(productDiv);
+});
