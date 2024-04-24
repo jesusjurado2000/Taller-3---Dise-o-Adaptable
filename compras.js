@@ -52,3 +52,8 @@ function addToCart(productId) {
   }
   renderCart();
 }
+
+function removeFromCart(productId) {
+  cartItems = cartItems.filter(item => item.id !== productId);
+  renderCart();
+}
