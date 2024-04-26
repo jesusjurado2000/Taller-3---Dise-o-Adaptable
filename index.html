@@ -1,20 +1,56 @@
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hotel Shop</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Compras de Hotel</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-
-  <h1>Hotel Shop</h1>
-  <div class="gallery" id="gallery">
-  </div>
-  <h2>Carrito</h2>
-  <div id="cart" class="cart">Selecciona "añadir al carrito" en el producto que desees comprar</div>
-  <button id="checkoutBtn" class="checkout-btn">Checkout</button>
-</div>
-  <script src="script.js"></script>
+    <div class="gallery">
+        <div class="product" data-id="1">
+            <img src="https://icons.iconarchive.com/icons/iconarchive/wild-camping/128/Water-Bottle-icon.png" alt="Agua">
+            <h3>Agua</h3>
+            <p>Precio: $2</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="2">
+            <img src="https://icons.iconarchive.com/icons/hybridworks/yoritsuki/128/Oshibori-wet-hand-towel-icon.png" alt="Toalla">
+            <h3>Toalla</h3>
+            <p>Precio: $15</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="3">
+            <img src="https://icons.iconarchive.com/icons/robinweatherall/cleaning/128/bottles-icon.png" alt="Jabón">
+            <h3>Jabón</h3>
+            <p>Precio: $5</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="4">
+            <img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-flat/128/Toothbrush-Flat-icon.png" alt="Cepillo">
+            <h3>Cepillo</h3>
+            <p>Precio: $2</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="5">
+            <img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-mono/128/Socks-icon.png" alt="Medias">
+            <h3>Medias</h3>
+            <p>Precio: $10</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product" data-id="6">
+            <img src="https://icons.iconarchive.com/icons/ionic/ionicons/128/shirt-icon.png" alt="Camisa">
+            <h3>Camisa</h3>
+            <p>Precio: $20</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    </div>
+    
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul class="cart-items"></ul>
+        <button class="checkout">Checkout</button>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
