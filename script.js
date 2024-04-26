@@ -45,11 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice += quantity * getProductPrice(productName);
         });
         message += `Total a pagar: $${totalPrice}`;
-        console.log(message);
-        // Reemplaza '123456789' con el número de WhatsApp del hotel
-        /*const hotelWhatsAppNumber = "123456789";
+        const hotelWhatsAppNumber = "573137766452";
         const url = `https://wa.me/${hotelWhatsAppNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");*/
+        window.open(url, "_blank");
     });
 });
 
