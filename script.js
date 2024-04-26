@@ -5,7 +5,7 @@ const products = [
 ];
 
 const gallery = document.getElementById('gallery');
-const cart = document.getElementById('cart');
+//const cart = document.getElementById('cart');
 const checkoutBtn = document.getElementById('checkoutBtn');
 
 // Render products gallery
