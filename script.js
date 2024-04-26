@@ -45,9 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice += quantity * getProductPrice(productName);
         });
         message += `Total a pagar: $${totalPrice}`;
-        const hotelWhatsAppNumber = "573137766452";
+        
+        // Reemplaza '123456789' con el número de WhatsApp del hotel
+        const hotelWhatsAppNumber = "123456789";
         const url = `https://wa.me/${hotelWhatsAppNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
+        
+        // Limpiar lista de compras
+        cartItemsList.innerHTML = "";
     });
 });
 
@@ -55,12 +60,12 @@ function getProductPrice(productName) {
     // Aquí puedes agregar lógica para obtener el precio de cada producto
     // Por ahora, solo devolvemos precios fijos para los productos de ejemplo
     const prices = {
-        "Agua": 2,
-        "Toalla": 15,
-        "Jabón": 5,
+        "Producto 1": 10,
+        "Toalla": 5,
+        "Jabón": 3,
         "Cepillo": 2,
-        "Medias": 10,
-        "Camisa": 20
+        "Medias": 4,
+        "Desodorante": 6
     };
     return prices[productName];
 }
